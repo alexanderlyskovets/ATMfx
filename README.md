@@ -1,8 +1,8 @@
 # **ATM (javafx)**
 training example
-#### Main features:
-#### Used technologies:
+### Main features:
+### Used technologies:
 + JavaFX
 + Hibernate
-#### Version:
-#### Installation:
+### Version:
+### Installation:
