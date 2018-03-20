@@ -2,6 +2,7 @@
 training example
 ### Main features:
 ### Used technologies:
++ Maven
 + JavaFX
 + Hibernate
 ### Version:
