@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.lyskovets.model.CardinfoEntity" table="cardinfo" schema="public" catalog="atm">
+        <id name="account">
+            <column name="account" sql-type="char(64)" length="64"/>
+        </id>
+        <property name="pin">
+            <column name="pin" sql-type="char(64)" length="64"/>
+        </property>
+        <property name="balance">
+            <column name="balance" sql-type="char(30)" length="30"/>
+        </property>
+        <set name="clientsByAccount" inverse="true">
+            <key>
+                <column name="cardinfo_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="ru.lyskovets.model.ClientsEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>
