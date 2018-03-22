@@ -15,7 +15,6 @@ public class RootLayoutController implements Controller {
 
     @FXML
     private void initialize() {
-        System.out.println("ok root layout controller");
     }
 
 
@@ -118,7 +117,6 @@ public class RootLayoutController implements Controller {
     }
 
     public void setView() {
-
     }
 
     /******************************************************

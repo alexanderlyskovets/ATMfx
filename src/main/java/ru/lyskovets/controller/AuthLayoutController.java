@@ -1,10 +1,10 @@
 package ru.lyskovets.controller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import ru.lyskovets.MainApp;
 import ru.lyskovets.model.Model;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 
 public class AuthLayoutController implements Controller {
     private Model model;
@@ -24,20 +24,7 @@ public class AuthLayoutController implements Controller {
      */
     @FXML
     private void initialize() {
-        northLabel.setText(MainApp.INFO_TEXT_ACCOUNT_INPUT);
-        System.out.println("ok auth layout controller");
-    }
-
-    /**
-     * Handler of label mouse-click
-     */
-    @FXML
-    private void handleAllLabels() {
-        System.out.println("before clicked AUTH, westSideState = " + model.getWestSideState());
-        AnchorPane layout = mainApp.getInfoLayout();
-        mainApp.setWestSide(layout);
-        model.setWestSideState(0);
-        System.out.println("after clicked AUTH, westSideState = " + model.getWestSideState());
+        northLabel.setText(MainApp.INFO_TEXT_INPUT_ACCOUNT);
     }
 
     private String hideText(String text) {
@@ -45,6 +32,12 @@ public class AuthLayoutController implements Controller {
     }
 
     public void setView() {
+        int westSideState = model.getWestSideState();
+        if (westSideState == Model.WEST_SIDE_STATUS_INPUT_ACCOUNT){
+            northLabel.setText(MainApp.INFO_TEXT_INPUT_ACCOUNT);
+        } else if (westSideState == Model.WEST_SIDE_STATUS_INPUT_PIN) {
+            northLabel.setText(MainApp.INFO_TEXT_INPUT_PIN);
+        }
         southLabel.setText(hideText(model.getEnteredString()));
     }
 

@@ -55,11 +55,11 @@ public class ConsoleLayoutController implements Controller{
      */
     @FXML
     private void handleEnterButton() {
-        // todo дописать обработку ввода ВВОД
+        model.handleInput();
+        authLayoutController.setView();
     }
 
     public void setView() {
-
     }
 
     /******************************************************

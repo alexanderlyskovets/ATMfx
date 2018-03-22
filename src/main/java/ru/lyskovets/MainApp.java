@@ -18,8 +18,8 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
     public static final String INFO_TEXT_INITIAL = "Добро пожаловать!\n\nДля начала работы коснитесь экрана";
-    public static final String INFO_TEXT_ACCOUNT_INPUT = "ВВЕДИТЕ № СЧЕТА";
-    public static final String INFO_TEXT_PIN_INPUT = "ВВЕДИТЕ ПИН-КОД";
+    public static final String INFO_TEXT_INPUT_ACCOUNT = "ВВЕДИТЕ № СЧЕТА";
+    public static final String INFO_TEXT_INPUT_PIN = "ВВЕДИТЕ ПИН-КОД";
     private final String MAIN_TITLE = "ATM";
     private final String MAIN_ICON = "/images/application_icon.png";
     private final String ROOT_LAYOUT = "/rootLayout.fxml";
@@ -63,7 +63,7 @@ public class MainApp extends Application {
 
         // set infoLayout on the west side
         setWestSide(infoLayout);
-        model.setWestSideState(model.WEST_SIDE_STATUS_INITIAL); // set initial screen
+        model.setWestSideState(Model.WEST_SIDE_STATUS_INITIAL); // set initial screen
 
         // set info text
         infoController.setText(INFO_TEXT_INITIAL);
