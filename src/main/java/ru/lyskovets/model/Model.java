@@ -67,7 +67,9 @@ public class Model {
             enteredString = "";
             setWestSideState(WEST_SIDE_STATUS_OPERATIONAL);
         }
-        // todo send account & pin to DAO
+
+        // TODO: send account & pin to DAO
+
     }
 
     private boolean isInitial() {
