@@ -15,6 +15,10 @@ class HibernateUtil {
         }
     }
 
+    private HibernateUtil() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
     }
