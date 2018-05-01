@@ -1,15 +1,5 @@
 package ru.lyskovets;
 
-import java.io.IOException;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
-
 import ru.lyskovets.controller.AuthLayoutController;
 import ru.lyskovets.controller.ConsoleLayoutController;
 import ru.lyskovets.controller.Controller;
@@ -17,10 +7,19 @@ import ru.lyskovets.controller.InfoLayoutController;
 import ru.lyskovets.controller.RootLayoutController;
 import ru.lyskovets.model.Model;
 
+import java.io.IOException;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
 public class MainApp extends Application {
     public static final String INFO_TEXT_INITIAL = "Добро пожаловать!\n\nДля начала работы коснитесь экрана";
-    public static final String INFO_TEXT_ACCOUNT_INPUT = "ВВЕДИТЕ № СЧЕТА";
-    public static final String INFO_TEXT_PIN_INPUT = "ВВЕДИТЕ ПИН-КОД";
+    public static final String INFO_TEXT_INPUT_ACCOUNT = "ВВЕДИТЕ № СЧЕТА";
+    public static final String INFO_TEXT_INPUT_PIN = "ENTER PIN";
     private final String MAIN_TITLE = "ATM";
     private final String MAIN_ICON = "/images/application_icon.png";
     private final String ROOT_LAYOUT = "/rootLayout.fxml";
@@ -36,8 +35,6 @@ public class MainApp extends Application {
     private InfoLayoutController infoController;
     private AuthLayoutController authController;
     private ConsoleLayoutController consoleLayoutController;
-
-    private Pane westSide; // pointer to the current Pane on the west side
 
     public static void main(String[] args) {
         launch(args);
@@ -66,15 +63,10 @@ public class MainApp extends Application {
 
         // set infoLayout on the west side
         setWestSide(infoLayout);
-        model.setWestSideState(model.WEST_SIDE_STATUS_INITIAL); // set initial screen
-
-        // database connect
-        
+        model.setWestSideState(Model.WEST_SIDE_STATUS_INITIAL); // set initial screen
 
         // set info text
         infoController.setText(INFO_TEXT_INITIAL);
-
-        String pointer = "stop";
     }
 
     private void bindControllers() {
@@ -153,7 +145,6 @@ public class MainApp extends Application {
 
     public void setWestSide(AnchorPane layout) {
         rootLayout.setLeft(layout);
-        westSide = layout;
     }
 
     public AnchorPane getInfoLayout() {
@@ -164,7 +155,4 @@ public class MainApp extends Application {
         return authLayout;
     }
 
-    public Pane getWestSide() {
-        return westSide;
-    }
 }

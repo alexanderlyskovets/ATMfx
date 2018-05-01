@@ -29,7 +29,7 @@ public class ConsoleLayoutController implements Controller{
      */
     @FXML
     private void handleDotButton() {
-        // todo дописать обработку ввода ТОЧКА
+        // TODO: дописать обработку ввода ТОЧКА
     }
 
     /**
@@ -55,11 +55,11 @@ public class ConsoleLayoutController implements Controller{
      */
     @FXML
     private void handleEnterButton() {
-        // todo дописать обработку ввода ВВОД
+        model.handleInput();
+        authLayoutController.setView();
     }
 
     public void setView() {
-
     }
 
     /******************************************************
