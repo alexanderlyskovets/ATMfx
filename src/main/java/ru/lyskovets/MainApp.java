@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 public class MainApp extends Application {
     public static final String INFO_TEXT_INITIAL = "Добро пожаловать!\n\nДля начала работы коснитесь экрана";
     public static final String INFO_TEXT_INPUT_ACCOUNT = "ВВЕДИТЕ № СЧЕТА";
-    public static final String INFO_TEXT_INPUT_PIN = "ВВЕДИТЕ ПИН-КОД";
+    public static final String INFO_TEXT_INPUT_PIN = "ENTER PIN";
     private final String MAIN_TITLE = "ATM";
     private final String MAIN_ICON = "/images/application_icon.png";
     private final String ROOT_LAYOUT = "/rootLayout.fxml";
