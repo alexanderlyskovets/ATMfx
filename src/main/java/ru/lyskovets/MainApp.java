@@ -17,15 +17,15 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
-    public static final String INFO_TEXT_INITIAL = "Добро пожаловать!\n\nДля начала работы коснитесь экрана";
-    public static final String INFO_TEXT_INPUT_ACCOUNT = "ВВЕДИТЕ № СЧЕТА";
+    private static final String INFO_TEXT_INITIAL = "WELCOME!\n\nto get started, tap the screen";
+    public static final String INFO_TEXT_INPUT_ACCOUNT = "ENTER YOUR ACCOUNT NUMBER";
     public static final String INFO_TEXT_INPUT_PIN = "ENTER PIN";
-    private final String MAIN_TITLE = "ATM";
-    private final String MAIN_ICON = "/images/application_icon.png";
-    private final String ROOT_LAYOUT = "/rootLayout.fxml";
-    private final String CONSOLE_LAYOUT = "/consoleLayout.fxml";
-    private final String INFO_LAYOUT = "/infoLayout.fxml";
-    private final String AUTH_LAYOUT = "/authLayout.fxml";
+    private static final String MAIN_TITLE = "ATM";
+    private static final String MAIN_ICON = "/images/application_icon.png";
+    private static final String ROOT_LAYOUT = "/rootLayout.fxml";
+    private static final String CONSOLE_LAYOUT = "/consoleLayout.fxml";
+    private static final String INFO_LAYOUT = "/infoLayout.fxml";
+    private static final String AUTH_LAYOUT = "/authLayout.fxml";
     private Model model;
     private Stage primaryStage;
     private BorderPane rootLayout;
