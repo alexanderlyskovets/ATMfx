@@ -126,8 +126,8 @@ public class MainApp extends Application {
     }
 
     /**
-     * Root Layout initialization
-     * always visible
+     * Root Layout initialization. Layout is always visible
+     *
      */
     private void initRootLayout() {
         try {

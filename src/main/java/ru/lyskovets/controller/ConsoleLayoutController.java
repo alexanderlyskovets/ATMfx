@@ -21,6 +21,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of numeric button pressing
+     * @param e
      */
     @FXML
     private void handleNumericButton(ActionEvent event) {
@@ -32,6 +33,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of dot button pressing
+     *
      */
     @FXML
     private void handleDotButton() {
@@ -40,6 +42,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of cancel button pressing
+     *
      */
     @FXML
     private void handleCancelButton() {
@@ -49,6 +52,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of reset button pressing
+     *
      */
     @FXML
     private void handleResetButton() {
@@ -58,6 +62,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of enter button pressing
+     *
      */
     @FXML
     private void handleEnterButton() {
@@ -70,6 +75,7 @@ public class ConsoleLayoutController implements Controller{
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {

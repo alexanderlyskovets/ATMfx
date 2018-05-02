@@ -21,6 +21,7 @@ public class RootLayoutController implements Controller {
 
     @FXML
     private void initialize() {
+        // do nothing, under construction
     }
 
 
@@ -127,6 +128,7 @@ public class RootLayoutController implements Controller {
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {

@@ -87,6 +87,7 @@ public class Model {
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public int getWestSideState() {

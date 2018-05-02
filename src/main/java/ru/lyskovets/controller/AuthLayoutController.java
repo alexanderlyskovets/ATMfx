@@ -25,8 +25,9 @@ public class AuthLayoutController implements Controller {
     private Label southLabel;
 
     /**
-     * Инициализация класса-контроллера. Этот метод вызывается автоматически
-     * после того, как fxml-файл будет загружен.
+     * Initialization of controller class.
+     * This method is called automatically after the fxml-file is loaded
+     *
      */
     @FXML
     private void initialize() {
@@ -49,6 +50,7 @@ public class AuthLayoutController implements Controller {
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {
