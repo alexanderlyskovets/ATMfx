@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2018.
+ * Written by Alexander Lyskovets
+ *
+ */
+
 package ru.lyskovets.controller;
 
 import javafx.fxml.FXML;
