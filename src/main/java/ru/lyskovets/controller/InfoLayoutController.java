@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2018.
+ * Written by Alexander Lyskovets
+ *
+ */
+
 package ru.lyskovets.controller;
 
 import ru.lyskovets.MainApp;
@@ -15,15 +21,18 @@ public class InfoLayoutController implements Controller {
     private Label infoLabel;
 
     /**
-     * Инициализация класса-контроллера. Этот метод вызывается автоматически
-     * после того, как fxml-файл будет загружен.
+     * Initialization of controller class.
+     * This method is called automatically after the fxml-file is loaded
+     *
      */
     @FXML
     private void initialize() {
+        // do nothing, under construction
     }
 
     /**
      * Handler of label mouse-click
+     *
      */
     @FXML
     private void handleInfoLabel() {
@@ -37,10 +46,12 @@ public class InfoLayoutController implements Controller {
     }
 
     public void setView() {
+        // do nothing, under construction
     }
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {

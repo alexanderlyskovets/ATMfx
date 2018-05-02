@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2018.
+ * Written by Alexander Lyskovets
+ *
+ */
+
 package ru.lyskovets.model;
 
 import ru.lyskovets.MainApp;
@@ -81,6 +87,7 @@ public class Model {
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public int getWestSideState() {

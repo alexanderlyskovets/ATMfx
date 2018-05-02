@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2018.
+ * Written by Alexander Lyskovets
+ *
+ */
+
 package ru.lyskovets.controller;
 
 import javafx.fxml.FXML;
@@ -15,6 +21,7 @@ public class RootLayoutController implements Controller {
 
     @FXML
     private void initialize() {
+        // do nothing, under construction
     }
 
 
@@ -121,6 +128,7 @@ public class RootLayoutController implements Controller {
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {

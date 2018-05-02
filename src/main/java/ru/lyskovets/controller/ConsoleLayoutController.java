@@ -1,11 +1,17 @@
+/*
+ * Copyright (c) 2018.
+ * Written by Alexander Lyskovets
+ *
+ */
+
 package ru.lyskovets.controller;
 
 import ru.lyskovets.MainApp;
+import ru.lyskovets.model.Model;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import ru.lyskovets.model.Model;
 
 public class ConsoleLayoutController implements Controller{
     private Model model;
@@ -15,10 +21,11 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of numeric button pressing
+     * @param e
      */
     @FXML
-    private void handleNumericButton(ActionEvent event) {
-        IButtonAction ba = IButtonAction.valueOf(((Button) event.getSource()).idProperty().get());
+    private void handleNumericButton(ActionEvent e) {
+        IButtonAction ba = IButtonAction.valueOf(((Button) e.getSource()).idProperty().get());
         int selectedDigit = ba.doAction();
         model.addDigit(selectedDigit);
         authLayoutController.setView();
@@ -26,6 +33,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of dot button pressing
+     *
      */
     @FXML
     private void handleDotButton() {
@@ -34,6 +42,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of cancel button pressing
+     *
      */
     @FXML
     private void handleCancelButton() {
@@ -43,6 +52,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of reset button pressing
+     *
      */
     @FXML
     private void handleResetButton() {
@@ -52,6 +62,7 @@ public class ConsoleLayoutController implements Controller{
 
     /**
      * Handler of enter button pressing
+     *
      */
     @FXML
     private void handleEnterButton() {
@@ -64,6 +75,7 @@ public class ConsoleLayoutController implements Controller{
 
     /******************************************************
      * Getters & Setters
+     *
      */
 
     public void setModel(Model model) {
