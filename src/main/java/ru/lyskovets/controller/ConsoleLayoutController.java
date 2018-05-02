@@ -24,8 +24,8 @@ public class ConsoleLayoutController implements Controller{
      * @param e
      */
     @FXML
-    private void handleNumericButton(ActionEvent event) {
-        IButtonAction ba = IButtonAction.valueOf(((Button) event.getSource()).idProperty().get());
+    private void handleNumericButton(ActionEvent e) {
+        IButtonAction ba = IButtonAction.valueOf(((Button) e.getSource()).idProperty().get());
         int selectedDigit = ba.doAction();
         model.addDigit(selectedDigit);
         authLayoutController.setView();
