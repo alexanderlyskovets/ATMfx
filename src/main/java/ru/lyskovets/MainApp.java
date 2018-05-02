@@ -52,6 +52,7 @@ public class MainApp extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle(MAIN_TITLE);
         this.primaryStage.getIcons().add(new Image(MAIN_ICON));
+        this.primaryStage.setResizable(false);
 
         // initialize layouts
         initLayouts();
