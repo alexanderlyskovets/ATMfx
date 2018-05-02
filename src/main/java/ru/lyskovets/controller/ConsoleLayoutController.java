@@ -7,11 +7,11 @@
 package ru.lyskovets.controller;
 
 import ru.lyskovets.MainApp;
+import ru.lyskovets.model.Model;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import ru.lyskovets.model.Model;
 
 public class ConsoleLayoutController implements Controller{
     private Model model;

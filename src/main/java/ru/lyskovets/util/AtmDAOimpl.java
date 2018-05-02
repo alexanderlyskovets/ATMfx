@@ -6,11 +6,10 @@
 
 package ru.lyskovets.util;
 
-import org.hibernate.HibernateException;
 import ru.lyskovets.model.CardinfoEntity;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import java.sql.SQLException;
 
 import static ru.lyskovets.util.HibernateUtil.getSessionFactory;
 
